@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Police1";
     src: url("./Fonts/GloriaHallelujah-Regular.ttf") format("ttf"), url("./Fonts/GloriaHallelujah-Regular.ttf") format("ttf");
@@ -146,7 +147,7 @@ table {
 /***** END OF CSS RESET *****/
 
 html {
-    background-color: green;
+    background-color: white;
     text-align: justify;
     font-family: 'Indie Flower';
 }
@@ -388,9 +389,9 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-right: 20px;
-    padding: 10px;
-    width: 100%;
+    margin-right: 0;
+    margin: 20px;
+    
 }
 
 #presentation2 #div1presentation2 #div1 {
@@ -565,7 +566,7 @@ main {
     flex-direction: column;
     font-family: arial;
     padding: 5px 0;
-    align-items: center;
+   
 }
 
 .evenements #event_text #liste ul li {
@@ -747,6 +748,7 @@ footer .element textarea {
 }
 
 @media screen and (min-width: 768px) {
+
     html {
         background-color: white;
     }
@@ -754,9 +756,11 @@ footer .element textarea {
     h1 {
         font-size: 50px;
     }
+
     h2 {
         font-size: 40px;
     }
+
     /***** PHOTOS PRESENTATION *****/
     @keyframes glisse {
         0% {
@@ -775,33 +779,41 @@ footer .element textarea {
             transform: translateX(0);
         }
     }
+
     .slider {
         display: block;
         width: calc(100%*2);
         animation: glisse 15s infinite;
     }
+
     .slide {
         float: left;
         width: 50%;
     }
+
     #david2 {
         display: block;
     }
+
     .decr {
         height: 99.1%;
     }
+
     #david1,
     #david2 {
         text-align: center;
         height: 526px;
     }
+
     #titre2 {
         display: block;
     }
+
     #date {
         font-size: 20px;
         margin-top: 150px;
     }
+
     /***** PRESENTATION 2 *****/
     #presentation2 {
         width: 95%;
@@ -809,70 +821,90 @@ footer .element textarea {
         margin: 0 20px 0 20px auto;
         padding: 20px 0px 20px 0px;
     }
+
     #presentation2 #div1presentation2 {
         flex-direction: row;
     }
+
     .divborder {
         display: block;
     }
+
     #presentation2 #div1presentation2 p {
         padding: 0;
     }
+
     #presentation2 #div1presentation2 img {
         width: 25%;
         margin-right: 20px;
     }
+
     #presentation2 #div2presentation2 {
         flex-direction: row;
         margin-right: 20px;
     }
+
     #presentation2 #div2presentation2 p {
         margin-right: 10px;
     }
+
     #presentation2 #div2presentation2 img {
         width: 35%;
         margin-left: 10px;
     }
+
     /***** ALBUM *****/
     .album {
         flex-direction: row;
         width: 99%;
     }
+
     .album .sub_album {
         display: flex;
     }
+
     .zoom .text {
         font-size: 40px;
     }
+
     /***** ÉVÈNEMENTS *****/
     #evenement {
         width: 95%;
     }
+
     #evenement h1 {
         font-size: 40px;
     }
+
     .evenements {
-        flex-direction: row;
+        flex-direction: column;
     }
+
     .evenements #event_text {
+        flex: 50%;
         padding: 20px;
     }
+
     .evenements #event_text #liste {
         flex-direction: row;
         border: 1px solid black;
         padding: 5px;
+        align-items: center;
     }
+
     .evenements #event_text #liste ul {
         margin: 0 5px 0 5px;
     }
+
     .evenements #event_text #liste #liste_droite {
         margin-left: 15px;
     }
+
+
     .evenements iframe {
         max-width: none;
-        width: 640px;
+        width: 700px;
         height: 480px;
-        padding: 10px
     }
 
     /***** INSCRIPTION *****/
