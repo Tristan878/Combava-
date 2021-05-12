@@ -1,0 +1,929 @@
+@font-face {
+    font-family: "Police1";
+    src: url("./Fonts/GloriaHallelujah-Regular.ttf") format("ttf"), url("./Fonts/GloriaHallelujah-Regular.ttf") format("ttf");
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/  
+    v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/***** END OF CSS RESET *****/
+
+html {
+    background-color: green;
+    text-align: justify;
+    font-family: 'Indie Flower';
+}
+
+body {
+    max-width: 100%,
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.vertical {
+    border-left: 2px black solid;
+    width: 2%;
+    height: 350px;
+    line-height: 600px;
+    position: top;
+    vertical-align: center;
+}
+
+.image {
+    width: 100%;
+}
+
+
+/***** HEADER *****/
+
+header {
+    background-color: yellow;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: row;
+    align-items: center;
+    border-bottom: 1px black solid;
+    align-items: center;
+}
+
+header .partie1 {
+    text-align: left;
+    flex: 33%;
+}
+
+#tailleMenu {
+    width: 20%;
+}
+
+#menu-demo2,
+#menu-demo2 ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#menu-demo2 li {
+    position: relative;
+}
+
+#menu-demo2 ul li {
+    display: inherit;
+}
+
+#menu-demo2 ul {
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+    border-bottom-right-radius: 30px;
+}
+
+#menu-demo2 li:hover ul {
+    width: 200px;
+    max-height: 15em;
+}
+
+#menu-demo2 li:last-child {
+    background-color: yellow;
+}
+
+#menu-demo2 li:last-child li {
+    background: yellow;
+}
+
+#menu-demo2 li:last-child:hover,
+#menu-demo2 li:last-child li a:hover {
+    border-bottom: solid green 1px;
+    color: green;
+}
+
+#menu-demo2 a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 32px;
+    color: black;
+    font-size: 20px;
+}
+
+#menu-demo2 ul a {
+    padding: 10px;
+    width: 100%;
+}
+
+#menu-demo2 li:hover li a {
+    color: black;
+    text-transform: inherit;
+}
+
+#menu-demo2 li:hover a,
+#menu-demo2 li li:hover a {
+    color: #000;
+}
+
+#logo {
+    height: 40px;
+}
+
+header .partie2 {
+    flex: 33%;
+    text-align: center;
+}
+
+header .partie3 {
+    flex: 33%;
+    text-align: right;
+}
+
+header .partie3 #insta {
+    width: 40px;
+}
+
+main {
+    width: 100%;
+    background-color: white;
+}
+
+#section1 {
+    position: relative;
+    width: 100%;
+}
+
+.affichage {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+}
+
+#david1,
+#david2 {
+    text-align: center;
+    width: 100%;
+}
+
+#david1 {
+    width: 100%;
+}
+
+#david2 {
+    display: none;
+}
+
+.decr {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    font-family: Georgia;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: white;
+    width: 30%;
+    height: 97.5%;
+}
+
+#titre2 {
+    display: none;
+    font-size: 50px;
+    color: yellow;
+}
+
+#headinfo {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+#date {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.divTeI {
+    width: 86%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: left;
+}
+
+
+/***** PRESENTATION2 *****/
+
+#titrepresentation2 {
+    font-size: 50px;
+    color: yellow;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 10px 0 0 10px;
+}
+
+#presentation2 {
+    background-color: green;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.titrepresentation {
+    font-size: 30px;
+    color: yellow;
+    font-family: Impact, fantasy;
+    margin-bottom: 40px;
+}
+
+#presentation2 #div1presentation2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+#presentation2 #div1presentation2 #div1 {
+    flex: 75%;
+    margin-right: 20px;
+}
+
+#presentation2 #div1presentation2 p {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.divborder {
+    display: none;
+    flex: 1%;
+    width: 2px;
+    height: 250px;
+    border-left: solid 2px yellow;
+}
+
+.divseparator {
+    flex: 1%;
+    border-bottom: solid 2px yellow;
+    width: 50%;
+    height: 2px;
+    margin-top: 10px;
+}
+
+#presentation2 #div1presentation2 img {
+    flex: 25%;
+    width: 80%;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#presentation2 #div2presentation2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 20px;
+}
+
+#presentation2 #div2presentation2 img {
+    flex: 35%;
+    width: 85%;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#presentation2 #div2presentation2 #div2 {
+    flex: 60%;
+}
+
+#presentation2 #div2presentation2 p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/***** ALBUMS *****/
+
+.album {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.zoom {
+    background-color: green;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.album #album2 {
+    width: 100%;
+}
+
+#image1 {
+    flex: 2;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+#image1:hover {
+    transform: scale(1.2);
+}
+
+.album .sub_album {
+    display: none;
+    flex-direction: column;
+    width: 45%;
+}
+
+.zoom .text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: yellow;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sub_album .text {
+    color: black;
+    font-size: 20px;
+}
+
+#image2 {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+#image2:hover {
+    transform: scale(1.2);
+}
+
+#image3 {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+#image3:hover {
+    transform: scale(1.2);
+}
+
+
+/***** ÉVENEMENTS *****/
+
+#evenement {
+    width: 100%;
+    background-color: yellow;
+    margin: auto;
+}
+
+#evenement h2 {
+    text-decoration: underline;
+    padding: 10px 0 20px 10px;
+    color: black;
+}
+
+.evenements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.evenements #event_text {
+    padding: 10px;
+}
+
+.evenements #event_text h3 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.evenements #event_text #liste {
+    display: flex;
+    flex-direction: column;
+    font-family: arial;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.evenements #event_text #liste ul li {
+    list-style-type: circle;
+    padding: 10px 0;
+}
+
+.evenements #event_text #liste ul li h3 {
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-family: 'Indie Flower';
+    font-size: 20px;
+}
+
+.evenements #event_text #liste ul {
+    margin: 0 5px 0 15px;
+    padding: 10px;
+    flex: 45%;
+}
+
+.evenements #event_text #liste #liste_droite {
+    margin-left: 15px;
+}
+
+.evenements iframe {
+    max-width: 100%;
+    height: 300px;
+    padding: 10px
+}
+
+
+/***** INSCRIPTION *****/
+
+#inscription {
+    width: 100%;
+    background-color: green;
+    margin: auto;
+    color: yellow;
+    font-size: 20px;
+}
+
+#inscription-- {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#inscription h2 {
+    text-decoration: underline;
+    padding: 10px 0 20px 10px;
+    color: yellow;
+}
+
+#inscription #inscription1 {
+    flex: 90%;
+}
+
+#inscription #inscription1 input {
+    border-radius: 50px;
+}
+
+#inscription #inscription1 form {
+    margin: 20px 20px;
+}
+
+#inscription #inscription1 label {
+    font-family: Impact, fantasy;
+}
+
+#border_inscri {
+    display: none;
+    flex: 1%;
+    width: 2px;
+    border-right: 2px solid yellow;
+}
+
+#inscription #inscription2 {
+    flex: 90%;
+    width: 90%;
+    margin: 20px 0 0 20px
+}
+
+#inscription #inscription2 label {
+    font-family: Impact, fantasy;
+}
+
+#inscription #inscription2 .info {
+    font-family: 'Indie Flower', cursive;
+}
+
+#inscription #inscription2 form {
+    padding: 10px 0;
+}
+
+#inscription #inscription2 div {
+    text-align: right;
+}
+
+
+/***** IMAGE OBLIGATOIRE *****/
+
+.contenant {
+    background-color: green;
+    position: relative;
+    text-align: center;
+    color: green;
+    margin: auto;
+}
+
+.contenant img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.texte_centrer {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-family: Impact;
+}
+
+
+/***** FOOTER *****/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: yellow;
+}
+
+footer .element {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+
+footer .element h3 {
+    font-size: 30px;
+    font-family: Impact;
+    color: green;
+    margin-bottom: 10px;
+}
+
+footer .element #bouton {
+    text-align: right;
+}
+
+#footer_insta,
+#footer_twit,
+#footer_yout {
+    width: 40px;
+}
+
+.footer_partage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .element ul {
+    padding: 10px 0 10px 30px;
+}
+
+footer .element ul li h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+footer .element ul li a {
+    color: green
+}
+
+footer .element textarea {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        background-color: white;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    /***** PHOTOS PRESENTATION *****/
+    @keyframes glisse {
+        0% {
+            transform: translateX(0);
+        }
+        10% {
+            transform: translateX(0)
+        }
+        50% {
+            transform: translateX(-50%);
+        }
+        60% {
+            transform: translateX(-50%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    .slider {
+        display: block;
+        width: calc(100%*2);
+        animation: glisse 15s infinite;
+    }
+    .slide {
+        float: left;
+        width: 50%;
+    }
+    #david2 {
+        display: block;
+    }
+    .decr {
+        height: 99.1%;
+    }
+    #david1,
+    #david2 {
+        text-align: center;
+        height: 526px;
+    }
+    #titre2 {
+        display: block;
+    }
+    #date {
+        font-size: 20px;
+        margin-top: 150px;
+    }
+    /***** PRESENTATION 2 *****/
+    #presentation2 {
+        width: 95%;
+        background-color: green;
+        margin: 0 20px 0 20px auto;
+        padding: 20px 0px 20px 0px;
+    }
+    #presentation2 #div1presentation2 {
+        flex-direction: row;
+    }
+    .divborder {
+        display: block;
+    }
+    #presentation2 #div1presentation2 p {
+        padding: 0;
+    }
+    #presentation2 #div1presentation2 img {
+        width: 25%;
+        margin-right: 20px;
+    }
+    #presentation2 #div2presentation2 {
+        flex-direction: row;
+        margin-right: 20px;
+    }
+    #presentation2 #div2presentation2 p {
+        margin-right: 10px;
+    }
+    #presentation2 #div2presentation2 img {
+        width: 35%;
+        margin-left: 10px;
+    }
+    /***** ALBUM *****/
+    .album {
+        flex-direction: row;
+        width: 99%;
+    }
+    .album .sub_album {
+        display: flex;
+    }
+    .zoom .text {
+        font-size: 40px;
+    }
+    /***** ÉVÈNEMENTS *****/
+    #evenement {
+        width: 95%;
+    }
+    #evenement h1 {
+        font-size: 40px;
+    }
+    .evenements {
+        flex-direction: row;
+    }
+    .evenements #event_text {
+        padding: 20px;
+    }
+    .evenements #event_text #liste {
+        flex-direction: row;
+        border: 1px solid black;
+        padding: 5px;
+    }
+    .evenements #event_text #liste ul {
+        margin: 0 5px 0 5px;
+    }
+    .evenements #event_text #liste #liste_droite {
+        margin-left: 15px;
+    }
+    .evenements iframe {
+        max-width: none;
+        width: 640px;
+        height: 480px;
+        padding: 10px
+    }
+
+    /***** INSCRIPTION *****/
+    #inscription {
+        width: 95%;
+    }
+    #inscription-- {
+        flex-direction: row;
+    }
+    #inscription #inscription1 {
+        flex: 45%;
+        margin-left: 40px;
+    }
+    #inscription #inscription1 form {
+        margin: 20px 40px;
+    }
+    #border_inscri {
+        display: flex;
+    }
+    #inscription #inscription2 {
+        flex: 45%;
+        width: 45%;
+        margin: 20px 0 0 40px;
+        padding: 10px;
+    }
+    /***** IMAGE OBLIGATOIRE *****/
+    .contenant {
+        width: 95%;
+        margin: auto;
+    }
+    .contenant img {
+        width: 70%;
+    }
+    .texte_centrer {
+        font-size:40px;
+    }
+
+    /***** FOOTER *****/
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        vertical-align: middle;
+    }
+    footer .element {
+        margin: 10px;
+        height: 175px;
+        vertical-align: middle;
+        border: 1px green solid;
+    }
+    footer .element label {
+        margin: 10px;
+    }
+}
