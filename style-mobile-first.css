@@ -252,7 +252,7 @@ header .partie1 {
 #menu-demo2 a {
     text-decoration: none;
     display: block;
-    padding: 8px 32px;
+    padding: 5px 5px;
     color: black;
     font-size: 20px;
 }
@@ -324,6 +324,8 @@ main {
 }
 
 .decr {
+    display: flex;
+    align-items: center;
     background: rgba(0, 0, 0, 0.8);
     z-index: 1;
     position: absolute;
@@ -338,8 +340,8 @@ main {
 }
 
 #titre2 {
-    display: none;
-    font-size: 50px;
+    display: block;
+    font-size: 20px;
     color: yellow;
 }
 
@@ -369,10 +371,11 @@ main {
     color: yellow;
     font-weight: bold;
     text-decoration: underline;
-    margin: 10px 0 0 10px;
+    margin-left: 10px
 }
 
 #presentation2 {
+    width: 100%;
     background-color: green;
     margin: auto;
     padding: 20px 0px 20px 0px;
@@ -389,20 +392,14 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-right: 0;
     margin: 20px;
     
 }
 
-#presentation2 #div1presentation2 #div1 {
-    flex: 75%;
-    margin-right: 20px;
-}
 
 #presentation2 #div1presentation2 p {
     font-size: 20px;
-    margin-top: 10px;
-    padding: 0 10px 0 10px;
+    margin: 10px 0 20px 10px;
 }
 
 .divborder {
@@ -414,7 +411,6 @@ main {
 }
 
 .divseparator {
-    flex: 1%;
     border-bottom: solid 2px yellow;
     width: 50%;
     height: 2px;
@@ -422,10 +418,8 @@ main {
 }
 
 #presentation2 #div1presentation2 img {
-    flex: 25%;
     width: 80%;
     border-radius: 20px;
-    margin: 10px;
 }
 
 #presentation2 #div2presentation2 {
@@ -436,19 +430,15 @@ main {
 }
 
 #presentation2 #div2presentation2 img {
-    flex: 35%;
     width: 85%;
     border-radius: 20px;
-    margin: 10px;
 }
 
-#presentation2 #div2presentation2 #div2 {
-    flex: 60%;
-}
+
 
 #presentation2 #div2presentation2 p {
     font-size: 20px;
-    margin-top: 10px;
+    margin: 10px 0 20px 10px;
 }
 
 
@@ -542,6 +532,7 @@ main {
     text-decoration: underline;
     padding: 10px 0 20px 10px;
     color: black;
+    font-size: 35px;
 }
 
 .evenements {
@@ -557,7 +548,7 @@ main {
 
 .evenements #event_text h3 {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -618,6 +609,7 @@ main {
     text-decoration: underline;
     padding: 10px 0 20px 10px;
     color: yellow;
+    font-size: 40px;
 }
 
 #inscription #inscription1 {
@@ -683,7 +675,7 @@ main {
 
 .texte_centrer {
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px;
@@ -710,7 +702,7 @@ footer .element h3 {
     font-size: 30px;
     font-family: Impact;
     color: green;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 footer .element #bouton {
@@ -744,10 +736,201 @@ footer .element ul li a {
 
 footer .element textarea {
     max-width: 100%;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 700px) and (max-width: 900px) {
+    html {
+        background-color: white;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    /***** PHOTOS PRESENTATION *****/
+  
+
+   
+
+    .decr {
+        height: 98.5%;
+    }
+
+   
+    #david2 {
+        text-align: center;
+        height: 400px;
+    }
+
+    #titre2 {
+        display: block;
+        font-size: 30px
+    }
+
+    #date {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    /***** PRESENTATION 2 *****/
+    #presentation2 {
+        width: 95%;
+        background-color: green;
+        margin: 0 20px 0 20px auto;
+        padding: 20px 0px 20px 0px;
+    }
+
+    #presentation2 #div1presentation2 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .divborder {
+        display: none;
+    }
+
+    #presentation2 #div1presentation2 p {
+        color: white;
+    }
+
+    #presentation2 #div1presentation2 img {
+        width: 80%;
+    }
+
+    #presentation2 #div2presentation2 {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    #presentation2 #div2presentation2 p {
+        color: white;
+    }
+
+    #presentation2 #div2presentation2 img {
+        width: 80%;
+    }
+
+    /***** ALBUM *****/
+    .album {
+        flex-direction: row;
+        width: 99%;
+    }
+
+    .album .sub_album {
+        display: flex;
+    }
+
+    .zoom .text {
+        font-size: 25px;
+
+    }
+
+    /***** ÉVÈNEMENTS *****/
+    #evenement {
+        width: 95%;
+    }
+
+    #evenement h1 {
+        font-size: 40px;
+    }
+
+    .evenements {
+        flex-direction: column;
+    }
+
+    .evenements #event_text {
+        flex: 50%;
+        padding: 20px;
+    }
+
+    .evenements #event_text #liste {
+        flex-direction: row;
+        border: 1px solid black;
+        padding: 5px;
+        align-items: center;
+    }
+
+    .evenements #event_text #liste ul {
+        margin: 0 5px 0 5px;
+    }
+
+    .evenements #event_text #liste #liste_droite {
+        margin-left: 15px;
+    }
+
+
+    .evenements iframe {
+        max-width: none;
+        width: 500px;
+        height: 480px;
+    }
+
+    /***** INSCRIPTION *****/
+    #inscription {
+        width: 95%;
+    }
+    #inscription-- {
+        flex-direction: row;
+    }
+    #inscription #inscription1 {
+        flex: 45%;
+        margin-left: 40px;
+    }
+    #inscription #inscription1 form {
+        margin: 20px 40px;
+    }
+    #border_inscri {
+        display: flex;
+    }
+    #inscription #inscription2 {
+        flex: 45%;
+        width: 45%;
+        margin: 20px 0 0 40px;
+        padding: 10px;
+    }
+    /***** IMAGE OBLIGATOIRE *****/
+    .contenant {
+        width: 95%;
+        margin: auto;
+    }
+    .contenant img {
+        width: 70%;
+    }
+    .texte_centrer {
+        font-size:40px;
+    }
+
+    /***** FOOTER *****/
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    footer .element {
+        margin: 10px auto;
+        height: 175px;
+        vertical-align: middle;
+        border: 1px green solid;
+        padding-bottom: 25px;
+        
+    }
+
+    footer .element textarea {
+        margin-bottom: 10px;
+    }
+
+    footer .element label {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
 
     html {
         background-color: white;
@@ -877,7 +1060,221 @@ footer .element textarea {
     }
 
     .evenements {
+        flex-direction: row;
+    }
+
+    .evenements #event_text {
+        flex: 50%;
+        padding: 20px;
+    }
+
+    .evenements #event_text #liste {
         flex-direction: column;
+        border: 1px solid black;
+        padding: 5px;
+        
+    }
+
+    .evenements #event_text #liste ul {
+        margin: 0 5px 0 5px;
+    }
+
+    .evenements #event_text #liste #liste_droite {
+        margin-left: 15px;
+    }
+
+
+    .evenements iframe {
+        max-width: none;
+        width: 400px;
+        height: 480px;
+    }
+
+    /***** INSCRIPTION *****/
+    #inscription {
+        width: 95%;
+    }
+    #inscription-- {
+        flex-direction: row;
+    }
+    #inscription #inscription1 {
+        flex: 45%;
+        margin-left: 40px;
+    }
+    #inscription #inscription1 form {
+        margin: 20px 40px;
+    }
+    #border_inscri {
+        display: flex;
+    }
+    #inscription #inscription2 {
+        flex: 45%;
+        width: 45%;
+        margin: 20px 0 0 40px;
+        padding: 10px;
+    }
+    /***** IMAGE OBLIGATOIRE *****/
+    .contenant {
+        width: 95%;
+        margin: auto;
+    }
+    .contenant img {
+        width: 70%;
+    }
+    .texte_centrer {
+        font-size:40px;
+    }
+
+    /***** FOOTER *****/
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        vertical-align: middle;
+    }
+    footer .element {
+        margin: 10px;
+        height: 175px;
+        vertical-align: middle;
+        border: 1px green solid;
+    }
+    footer .element label {
+        margin: 10px;
+    }
+}
+
+
+@media (min-width: 1100px) and (max-width: 1600px){
+
+    html {
+        background-color: white;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    /***** PHOTOS PRESENTATION *****/
+    @keyframes glisse {
+        0% {
+            transform: translateX(0);
+        }
+        10% {
+            transform: translateX(0)
+        }
+        50% {
+            transform: translateX(-50%);
+        }
+        60% {
+            transform: translateX(-50%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .slider {
+        display: block;
+        width: calc(100%*2);
+        animation: glisse 15s infinite;
+    }
+
+    .slide {
+        float: left;
+        width: 50%;
+    }
+
+    #david2 {
+        display: block;
+    }
+
+    .decr {
+        height: 99.1%;
+    }
+
+    #david1,
+    #david2 {
+        text-align: center;
+        height: 526px;
+    }
+
+    #titre2 {
+        display: block;
+    }
+
+    #date {
+        font-size: 20px;
+        margin-top: 150px;
+    }
+
+    /***** PRESENTATION 2 *****/
+    #presentation2 {
+        width: 95%;
+        background-color: green;
+        margin: 0 20px 0 20px auto;
+        padding: 20px 0px 20px 0px;
+    }
+
+    #presentation2 #div1presentation2 {
+        flex-direction: row;
+    }
+
+    .divborder {
+        display: block;
+    }
+
+    #presentation2 #div1presentation2 p {
+        padding: 0;
+    }
+
+    #presentation2 #div1presentation2 img {
+        width: 25%;
+        margin-right: 20px;
+    }
+
+    #presentation2 #div2presentation2 {
+        flex-direction: row;
+        margin-right: 20px;
+    }
+
+    #presentation2 #div2presentation2 p {
+        margin-right: 10px;
+    }
+
+    #presentation2 #div2presentation2 img {
+        width: 35%;
+        margin-left: 10px;
+    }
+
+    /***** ALBUM *****/
+    .album {
+        flex-direction: row;
+        width: 99%;
+    }
+
+    .album .sub_album {
+        display: flex;
+    }
+
+    .zoom .text {
+        font-size: 40px;
+    }
+
+    /***** ÉVÈNEMENTS *****/
+    #evenement {
+        width: 95%;
+    }
+
+    #evenement h1 {
+        font-size: 40px;
+    }
+
+    .evenements {
+        flex-direction: row;
     }
 
     .evenements #event_text {
@@ -903,7 +1300,7 @@ footer .element textarea {
 
     .evenements iframe {
         max-width: none;
-        width: 700px;
+        width: 550px;
         height: 480px;
     }
 
